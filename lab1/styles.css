@@ -1,0 +1,108 @@
+title{
+   font-size: 50px; 
+}
+
+body{
+    padding-bottom: 70px;
+}
+
+.flexim{
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.presentation{
+    text-align: center;
+    background-color: aliceblue;
+    color:black;
+    border-radius: 5px;
+    width: 400px;
+    margin:5px;
+    height: 140px;
+}
+
+.about{
+    text-align: center;
+    background-color: aliceblue;
+    color:black;
+    border-radius: 5px;
+    width: 400px;
+    margin:5px;
+    height: 140px;
+}
+
+.a{
+    text-align: center;
+    background-color: aliceblue;
+    color:black;
+    border-radius: 5px;
+    width: 200px;
+    height: 140px;
+    margin:5px;
+}
+
+.bigblock{
+    text-align: center;
+    background-color: aliceblue;
+    color:black;
+    border-radius: 5px;
+    width: auto;
+    margin:5px;
+}
+
+.bigblock img{
+    width: 200px;
+    height: 270px;
+    border-radius: 25%;
+}
+
+footer{
+    position : fixed;
+    height : 60px;
+    bottom : 0;
+    margin-top:1px solid;
+    background-color: white;
+    background-size: cover;
+    border-radius: 15px;
+    display: inline-flex;
+    width:99.2%;
+}
+
+footer p{
+  padding-left:15%;
+  display: inline-flex;  
+}
+
+html{
+    font-family: cursive;
+}
+
+.skills dd {
+    margin: 0;
+    margin-bottom: 10px;
+  
+    background-color: #e8e8e8;
+  }
+  
+  .skills-level {
+    font-size: 12px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #4470c4;
+  }
+  
+  .skills-level-html {
+    background-color: #47bb52;
+    width:75%;
+  }
+
+  .skills-level-css {
+    background-color: #47bb52;
+    width:50%;
+  }
+
+  .skills-level-js {
+    background-color: #47bb52;
+    width:15%;
+  }
