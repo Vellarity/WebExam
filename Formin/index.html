@@ -13,10 +13,16 @@
         <main>
             <form action="https://httpbin.org/post" method="post" enctype="multipart/form-data">
                 <label for="mail">Электронная почта:</label><br>
-                <input class="mail" type="text" placeholder="example@mail.com" name="mail" id="mail"><br>
+                <input class="all" type="text" placeholder="example@mail.com" name="mail" id="mail"><br>
                 <label for="pasword">Пароль:</label><br>
-                <input class="password" type="text" placeholder="********" name="password" id="password"><br>
-                <input type="submit" value="Войти">
+                <input class="all" type="text" placeholder="********" name="password" id="password"><br>
+                <ul class="checkboxes">
+                    <li class="checkbox-group">
+                        <input type="checkbox" id="checkbox-1" class="checkbox">
+                        <label for="checkbox-1" class="label">Запомнить меня</label>
+                    </li><br>
+                <input class="all" type="submit" value="Войти">
+
             </form>
         </main>
     </body>
