@@ -1,0 +1,138 @@
+.row{
+    display:flex;
+}
+
+.row_cell{
+    flex: 1;
+    min-width: 260px;
+}
+
+.row_cell--2{
+    flex:5;
+}
+
+aside{
+    background: url(810.jpg);
+    background-attachment: local;
+    background-size: 300px;
+    border-radius: 5px;
+}
+
+li.lidown::after{
+    position: inherit;
+    content:"";
+    padding-left: 15%;
+    align-items: stretch;
+    width: 50px;
+    height: 50px;
+    transform: scale(1);
+    scale: 2;
+    mask:url(1.svg) center no-repeat;
+    -webkit-mask: url(1.svg) center no-repeat;
+    background-color: black;
+    transition:0.7s;
+}
+
+.a li.lidown:hover::after{
+    background-color:#f7e4f2
+}
+
+.a li:hover{
+    background: #332f32;
+    border: 3px solid #332f32;
+    color:#f7e4f2;
+}
+
+h2{
+    
+    margin: 15px auto;
+    max-width: 200px;
+    text-align:center;
+    background-color: rgba(252, 184, 233,0.9);
+    color:#332f32;
+    border-radius: 5px;
+}
+
+.a li{
+    border: 3px solid #332f32;
+    display: flex;
+    transition: 0.7s;
+    list-style-type: none;
+    background-color: #f7bee7;
+    font-size:150%;
+    width: 90%;
+    height: 40px;
+    border-radius: 5px;
+    padding-left: 5px;
+    color: black;
+}
+
+ul {
+    margin-left: 5px; 
+    padding-left: 5px;
+
+}
+
+body{
+    background-color:rgb(92, 92, 92);
+    color: #f7e4f2;
+    font-family: Verdana;
+}
+
+footer{
+    background-color: #332f32;
+    display:flex;
+    justify-content: space-around;
+    font-size: 75%;
+    position: relative;
+    bottom:0;
+    right:0;
+    left:0;
+    border-radius: 5px;
+}
+
+.info{
+    flex:1;
+}
+
+.b li{
+    border: 3px solid #332f32;
+    display: flex;
+    transition: 0.7s;
+    list-style-type: none;
+    background-color: #f7bee7;
+    font-size:150%;
+    width: 90%;
+    height: 40px;
+    border-radius: 5px;
+    padding-left: 5px;
+    color: black;
+}
+
+.b li:hover{
+    background: #332f32;
+    border: 3px solid #332f32;
+    color:#f7e4f2;
+}
+
+.container {
+    background-color: #464646;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 8px 5px;
+    margin: auto;
+    max-width: 700px;
+  }
+  .cell {
+    width: 200px;
+    height: 200px;
+    margin: 6px;
+    background-color: #272727;
+  }
+main  p {
+    color: white;
+    position: relative;
+    top: 33%;
+    left: 23%;
+  }
