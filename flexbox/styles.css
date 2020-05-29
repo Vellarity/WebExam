@@ -1,3 +1,10 @@
+.mybody{
+    background-color:rgb(92, 92, 92);
+    color: #f7e4f2;
+    font-family: Verdana;
+    margin: 0px;
+}
+
 .row{
     display:flex;
 }
@@ -12,7 +19,7 @@
 }
 
 aside{
-    background: url(810.jpg);
+    background: url(pictures/810.jpg);
     background-attachment: local;
     background-size: 300px;
     border-radius: 5px;
@@ -27,8 +34,8 @@ li.lidown::after{
     height: 50px;
     transform: scale(1);
     scale: 2;
-    mask:url(1.svg) center no-repeat;
-    -webkit-mask: url(1.svg) center no-repeat;
+    mask:url(pictures/1.svg) center no-repeat;
+    -webkit-mask: url(pictures/1.svg) center no-repeat;
     background-color: black;
     transition:0.7s;
 }
@@ -73,13 +80,7 @@ ul {
 
 }
 
-body{
-    background-color:rgb(92, 92, 92);
-    color: #f7e4f2;
-    font-family: Verdana;
-}
-
-footer{
+.myfooter{
     background-color: #332f32;
     display:flex;
     justify-content: space-around;
@@ -115,7 +116,7 @@ footer{
     color:#f7e4f2;
 }
 
-.container {
+.mycontainer {
     background-color: #464646;
     display: flex;
     flex-wrap: wrap;
@@ -124,15 +125,49 @@ footer{
     margin: auto;
     max-width: 700px;
   }
-  .cell {
+.mycell {
     width: 200px;
     height: 200px;
     margin: 6px;
     background-color: #272727;
   }
-main  p {
-    color: white;
-    position: relative;
-    top: 33%;
-    left: 23%;
-  }
+
+main .buttonon {
+    color: black;
+    display: block;
+    position: inherit;
+    flex-grow: 1;
+    align-items: center;
+    background-color: #f7e4f2;
+    border: 1px solid black;
+    transition: 0.7s ease; /* Safari and Chrome */
+    width: 100%;
+    height:100%
+}
+
+main .buttonon:hover {
+    background: #332f32;
+    border: 3px solid #332f32;
+    color:#f7e4f2;
+}
+
+main .buttonon:focus {
+    background: #332f32;
+    border: 3px solid #332f32;
+    color:#f7e4f2;
+    outline: invert;
+    box-shadow: none;
+    transition: 0.7s ease; /* Safari and Chrome */
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.modal-body{
+    color: #272727;
+}
+
+.modal-header{
+    color:#272727;
+}

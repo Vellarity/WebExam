@@ -2,14 +2,16 @@
 <html>
     <head>
         <link href="styles.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
         <title>Флексбоксы</title>
         <meta charset="UTF-8">
     </head>
-    <body>
+    <body class="mybody">
             <header>
-                <div> </div>
-                <h1 id="main-title" align="center">Какой-то сайт</h1>
-                <div> </div>
+                <h1 id="main-title" align="center">Стили EDM</h1>
             </header><br>
         <div class="row">
             <aside class="row_cell">
@@ -21,36 +23,247 @@
                 </ul>
             </aside>
             <main class="row_cell--2">
-                <div class="container">
-                    <div class="cell">
-                        <p>200x200</p>
+                <div class="mycontainer">
+                    <div class="mycell">
+                        <!-- Кнопка запуска модального окна -->
+                        <button type="button" class="btn btn-lg buttonon" data-toggle="modal" data-target="#myModal1">
+                            Electro House
+                        </button>
+  
+                        <!-- Модальное окно -->
+                        <div class="modal fade" id="myModal1" tabindex="1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h4 class="modal-title" id="myModalLabel">Electro House</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Стилевая разновидность музыки хаус, возникшая от влияния тек-хауса и электроклэша на прогрессив-хаус начала 2000-х.</p>
+                                        <br>
+                                        <p>Самые популярные артисты : Hardwell, Martin Garrix, Dimitri Vegas & Like Mike, Tiesto, Afrojack, David Guetta, Nervo.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="cell">
-                        <p>200x200</p>
+                    <div class="mycell">
+                        <button type="button" class="btn btn-lg buttonon" data-toggle="modal" data-target="#myModal2">
+                            Future House
+                        </button>
+  
+                        <!-- Модальное окно -->
+                        <div class="modal fade" id="myModal2" tabindex="1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h4 class="modal-title" id="myModalLabel1">Future House</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Новый собирательный тренд в рамках хаус-музыки, объединяющий дип-хаус, гэридж и эксплуатирующий все самые проверенные музыкальные приемы коммерческого хауса последнего времени.</p>
+                                        <br>
+                                        <p>Самые популярные артисты: Don Diablo, Oliver Heldens, Tchami, Mike Williams, Zonderling, CID, Mesto.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="cell">
-                        <p>200x200</p>
+                    <div class="mycell">
+                        <button type="button" class="btn btn-lg buttonon" data-toggle="modal" data-target="#myModal3">
+                            Dubstep
+                        </button>
+  
+                        <!-- Модальное окно -->
+                        <div class="modal fade" id="myModal3" tabindex="1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h4 class="modal-title" id="myModalLabel">Dubstep</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                       <p> По звучанию дабстеп характеризуется темпом порядка 130-150 ударов в минуту, доминирующим низкочастотным «комканным» (wobble) басом с присутствием звукового искажения, а также разреженным брейкбитом на заднем плане. От более известного драм-н-бэйс стиль отличают резкая бочка и малый барабан, похожие на хардстайл.</p>
+                                        <br>
+                                       <p> Самые популярные артисты: Excision, Skrillex, Zomboy, Eptic, Mastadon, Space Laces, Barely Alive, Modestep, Kompany, Illenium.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="cell">
-                        <p>200x200</p>
+                    <div class="mycell">
+                        <button type="button" class="btn btn-lg buttonon" data-toggle="modal" data-target="#myModal4">
+                            Drum 'n' Bass
+                        </button>
+  
+                        <!-- Модальное окно -->
+                        <div class="modal fade" id="myModal4" tabindex="1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h4 class="modal-title" id="myModalLabel">Drum 'n' Bass</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                       <p> Жанр электронной музыки, который возник из рейва и олдскул-джангла в Англии в начале 1990-х годов. Изначально драм-н-бэйс возник как ответвление британской сцены брейкбита, джангла и рейва, когда музыканты стали смешивать бас из рагга с ускоренным брейкбитом из хип-хопа.</p>
+                                        <br>
+                                        <p>Самые популярные артисты: Pendulum, Noisia, High Contrast, Chase & Status, Black Sun Empire, Sub Focus, Aphrodite, Netsky, Koven, Feint.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="cell">
-                        <p>200x200</p>
+                    <div class="mycell">
+                        <button type="button" class="btn btn-lg buttonon" data-toggle="modal" data-target="#myModal5">
+                            Trance
+                        </button>
+  
+                        <!-- Модальное окно -->
+                        <div class="modal fade" id="myModal5" tabindex="1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h4 class="modal-title" id="myModalLabel">Trance</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                       <p> Это стиль электронной танцевальной музыки, который развился в 1990-е годы. Характерные признаки стиля: искусственность звучания (синтетические звуки, короткие повторяющиеся фразы), заметное внимание к тембрам и гармоническим партиям (по сравнению с техно), темп как правило от 128 до 145 ударов в минуту. Стиль получил такое название из-за повторяющихся ритмичных мелодий, которые будто бы погружают слушателя в состояние транса.</p>
+                                        <br>
+                                        <p>Самые популярные артисты : Armin van Buuren, Paul van Dyk, Ferry Corsten, Ali & Fila, Kyau & Albert, Andrew Rayel, Marcus Schulz, Solarstone, Roger Shah, Alex MORPH.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="cell">
-                        <p>200x200</p>
+                    <div class="mycell">
+                        <button type="button" class="btn btn-lg buttonon" data-toggle="modal" data-target="#myModal6">
+                            Psy Trance
+                        </button>
+  
+                        <!-- Модальное окно -->
+                        <div class="modal fade" id="myModal6" tabindex="1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h4 class="modal-title" id="myModalLabel">Psy Trance</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                       <p> Психоделический транс, он же «психоделик-транс» — направление в электронной музыке, отделившееся от гоа-транса в середине 1990-х годов. Сейчас сильно набрал обороты.</p>
+                                        <br>
+                                        <p>Самые популярные артисты : Vini Vici, Infected Mushroom, Shpongle, Juno Reactor, Astral Projection, Astrix.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="cell">
-                        <p>200x200</p>
+                    <div class="mycell">
+                        <button type="button" class="btn btn-lg buttonon" data-toggle="modal" data-target="#myModal7">
+                            Techno
+                        </button>
+  
+                        <!-- Модальное окно -->
+                        <div class="modal fade" id="myModal7" tabindex="1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h4 class="modal-title" id="myModalLabel">Techno</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                       <p> Характеризуется искусственностью звука, за счёт активного использования сэмплирования, акцентом на механических ритмах, многократным повторением структурных элементов музыкального произведения (лупы). Является одним из основных музыкальных жанров, исполняемых на рейвах.</p>
+                                        <br>
+                                       <p> Самые популярные артисты: Carl Cox, Richie Hawtin, Deadmau5, Eric Prydz, Jeff Mills, Chris Liebing, Carl Craig, Solomun, Nina Kraviz, Adam Beyer.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="cell">
-                        <p>200x200</p>
+                    <div class="mycell">
+                        <button type="button" class="btn btn-lg buttonon" data-toggle="modal" data-target="#myModal8">
+                             Hardstyle
+                        </button>
+  
+                        <!-- Модальное окно -->
+                        <div class="modal fade" id="myModal8" tabindex="1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h4 class="modal-title" id="myModalLabel">Hardstyle</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Стыковой переходный жанр электронной танцевальной музыки, преобразованный слиянием хард-транса и хардкор-техно. Сочетая в себе жёсткость ударных и мелодичность лидирующих партий, хардстайл появился в клубах Западной Европы в первой половине 2000-х.</p>
+                                        <br>
+                                       <p> Самые популярные артисты: Headhunterz, Noisecontrollers, Brennan Heart, Wildstylez, Zatox. </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="cell">
-                        <p>200x200</p>
+                    <div class="mycell">
+                        <button type="button" class="btn btn-lg buttonon" data-toggle="modal" data-target="#myModal9">
+                            Progressive House
+                        </button>
+  
+                        <!-- Модальное окно -->
+                        <div class="modal fade" id="myModal9" tabindex="1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h4 class="modal-title" id="myModalLabel">Progressive House</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                       <p> Разновидность хаус-музыки. Прогрессив-хаус характеризуется бо́льшим набором семплов и музыкальных инструментов в развитии ритма, и, в целом, более богатым и идейным звучанием, однако основная характеристика хауса — стандартный размер 4/4 и средний темп (120—140 BPM) — остаются. Прогрессив-хаус относится к элементу прогрессива, то есть к прогрессивной музыке. Так же как прогрессив-транс и т. д.</p>
+                                        <br>
+                                       <p> Самые популярные артисты: Deadmau5, Avicii, Erick Prydz, Swedish House Mafia, Alesso, Martin Garrix, Matisse & Sadko, Dubvision, Dimitry Vangelis & Wyman.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="cell">
-                        <p>200x200</p>
+                    <div class="mycell">
+                        <button type="button" class="btn btn-lg buttonon" data-toggle="modal" data-target="#myModal10">
+                            Deep House
+                        </button>
+  
+                        <!-- Модальное окно -->
+                        <div class="modal fade" id="myModal10" tabindex="1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h4 class="modal-title" id="myModalLabel">Deep House</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Жанровая вариация хаус-музыки, характеризующаяся лёгким, но в то же время углублённым атмосферным звучанием при минимальном наборе инструментации, а также частым наложением эффекта «влажного сигнала», и наличием лёгких эмбиент-переливов.</p>
+                                        <br>
+                                       <p> Самые популярные артисты: EDX, Nora En Pure, Saison, Art Of Tones, Sebb Junior, Black Loops, Atjazz.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </main>
@@ -62,7 +275,7 @@
                     <li>Форма входа</li>
             </aside>
         </div>
-        <footer>
+        <footer class="myfooter">
             <div class="info" class="left">
                 <h3>Контактная информация:</h3>
                 <p>Раз контактная информация</p>
